@@ -1,0 +1,33 @@
+{
+  "cars": [
+    {
+      "make": "Subaru",
+      "model": "Legacy",
+      "year": "2001",
+      "price": "5000",
+      "color": "Chartreuse",
+      "purchased": false,
+      "description": "This malodorous, rusted, and barely functional vehicle has ample mileage and a chronic oil-pan malady. But it runs!"
+   }
+
+    {
+      "make": "Honda",
+      "model": "Fit",
+      "year": "2016",
+      "price": "7999",
+      "color": "Goldenrod",
+      "purchased": false,
+      "description": "Clearly a better choice than the Subaru legacy, this fully functional vehicle won't bleed you of twice its resale value at least every other month."
+    }
+
+     {
+      "make": "Harley-Davidson",
+      "model": "Hog",
+      "year": "2026",
+      "price": "18999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+    }
+  ]
+}
