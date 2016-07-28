@@ -8,7 +8,7 @@
       "color": "Chartreuse",
       "purchased": false,
       "description": "This malodorous, rusted, and barely functional vehicle has ample mileage and a chronic oil-pan malady. But it runs!"
-   }
+   },
 
     {
       "make": "Honda",
@@ -18,7 +18,7 @@
       "color": "Goldenrod",
       "purchased": false,
       "description": "Clearly a better choice than the Subaru legacy, this fully functional vehicle won't bleed you of twice its resale value at least every other month."
-    }
+    },
 
      {
       "make": "Harley-Davidson",
