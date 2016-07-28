@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Car Lot</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="quiz.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="row checkboxRow">
+            <div class="col-xs-2">
 
-</head>
-<body>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+              <input type="text" class="inputField">
+            </div>
+            <div class="col-sm-3 col-xs-4">
+              <input type="button" class="button" value="I'm a button">
+            </div>
+          </div>
+          <div class="row outputRow">
+            <div class="col-sm-11 outputField">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<nav class="navbar navbar-default navbar-fixed-top">
 
-  <div class="container">
-    <div class="row checkboxRow">
-      <div class="col-xs-2">
-        <!-- spacer -->
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Car 1</h3>
 
-      <div class="col-sm-3 col-xs-4">
-        <input type="checkbox"><label>Dark Theme</label>
-      </div>
-
-      <div class="col-sm-3 col-xs-4">
-        <input type="checkbox"><label>Large Text</label>
-      </div>
     </div>
+    <div class="col-sm-4">
+      <h3>Car 2</h3>
 
-      <div class="row messagesRow">
-        <div class="col-sm-2">
-          Messages:
-        </div>
-      </div>
-
-      <div class="row outputRow">
-        <div class="col-sm-11 outputField">
-
-
-        </div>
-
-        </div>
-      </div>
     </div>
-<!-- <div class="container">
-<div class= "col-md-4">This is the First Column</div>
-<div class="row-md-4 firstRow">This is the first row.</div>
-<div class = "col-md-4 secondColumn">This is the Second Column</div>
-<div class = "col-md-4 thirdColumn">This is the Third Column</div>
-</div> -->
-</body>
+    <div class="col-sm-4">
+      <h3>Car 3</h3>
 
-<script type="text/javascript" src="carLot.js"></script>
-<script type="text/javascript" src="quiz.js"></script>
+    </div>
+  </div>
+</div>
+<!--
+    <div class="container-fluid">
+    <div class="row">
+      <div class="rcol-md-4 firstColumn"><p>test</p></div>
+      <div class ="col-md-4 secondColumn">test</div>
+      <div class ="col-md-4 thirdColumn">test</div>
+    </div>
+    </div> -->
+  </body>
+  <script type="text/javascript" src="carLot.js"></script>
+  <script type="text/javascript" src="quiz.js"></script>
 </body>
 </html>
