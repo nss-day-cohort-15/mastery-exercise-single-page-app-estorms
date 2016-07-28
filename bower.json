@@ -1,0 +1,17 @@
+{
+  "name": "mastery-exercise-single-page-app-estorms",
+  "homepage": "https://github.com/nss-day-cohort-15/mastery-exercise-single-page-app-estorms",
+  "authors": [
+    "Elizabeth Sanger <libsang@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
