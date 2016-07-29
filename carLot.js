@@ -7,12 +7,12 @@ var CarLot = (function () {
       return inventory;
     },
 
-    loadInventory: function (functionToBeInvoked) {
+    loadInventory: function (callback) {
       var xhr = new XMLHttpRequest()
       xhr.open('GET', 'inventory.json');
       xhr.addEventListener('load', function(event) {
-      inventory = JSON.parse(event.target.responseText)
-        functionToBeInvoked(inventory)
+      inventory = JSON.parse(event.target.responseText).cars
+        callback(inventory)
       })
       xhr.send()
     }
