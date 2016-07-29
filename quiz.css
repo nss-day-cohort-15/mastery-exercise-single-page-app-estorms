@@ -1,17 +1,32 @@
 .navbar {
 
-    background-color: blue;
+    background-color: lightgray;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
+    margin: 1px solid lightgray;
+    box-shadow: 5px 5px 2px #888888;
+    max-width: 1200px;
+    margin-left: 100px;
+    margin-left: 40px;
 
+}
+
+#carsContainer {
+    float: right;
+    height: 50%;
 }
 
 .car1, .car2, .car3 {
     border: 2px solid black;
 }
 
+h3 {
+    border: 2px solid black;
+    text-align: center;
+}
+
 body {
-    background-color: green;
+    background-color: #EAE0C8;
     padding-top: 100px;
 
 
