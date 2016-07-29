@@ -18,7 +18,7 @@
       "model": "Fit",
       "year": "2016",
       "price": "7999",
-      "color": "Goldenrod",
+      "color": "indianred",
       "purchased": false,
       "description": "Clearly a better choice than the Subaru legacy, this fully functional vehicle won't bleed you of twice its resale value at least every other month."
 
@@ -27,12 +27,46 @@
     },
 
      {
+      "make": "Tonka",
+      "model": "Child's Play",
+      "year": "1966",
+      "price": "700",
+      "color": "lavender",
+      "purchased": true,
+      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+
+
+    },
+
+     {
+      "make": "Jeep",
+      "model": "Outback",
+      "year": "1977",
+      "price": "54",
+      "color": "orange",
+      "purchased": true,
+      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+
+
+    },
+
+    {
       "make": "Harley-Davidson",
       "model": "Hog",
       "year": "2026",
       "price": "18999",
-      "color": "FireBrick",
+      "color": "slateblue",
       "purchased": false,
+      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+    },
+
+    {
+      "make": "Harley-Davidson",
+      "model": "Hog",
+      "year": "2026",
+      "price": "18999",
+      "color": "seagreen",
+      "purchased": true,
       "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
 
 

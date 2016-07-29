@@ -4,7 +4,7 @@
     padding-top: 25px;
     padding-bottom: 27px;
     margin: 1px solid lightgray;
-    box-shadow: 5px 5px 2px #888888;
+    box-shadow: 10px 5px 7px black;
     max-width: 1200px;
     margin-left: 100px;
     margin-left: 40px;
@@ -13,16 +13,16 @@
 
 
 #carColumn {
-    border: 2px solid black;
+    height: 400px;
+    margin: 45px;
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 1.5em;
 }
-/*
-h3 {
-    border: 2px solid black;
-    text-align: center;
-}*/
+
 
 body {
-    background-color: #EAE0C8;
+
     padding-top: 100px;
 
 
