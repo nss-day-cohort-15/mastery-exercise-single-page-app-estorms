@@ -6,9 +6,8 @@
 
 }
 
-
-.firstColumn {
-background-color: red;
+.car1, .car2, .car3 {
+    border: 2px solid black;
 }
 
 body {
