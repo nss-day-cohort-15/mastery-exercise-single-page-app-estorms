@@ -7,7 +7,7 @@
       "year": "2001",
       "price": "5000",
       "color": "Chartreuse",
-      "purchased": false,
+      "purchased": true,
       "description": "This malodorous, rusted, and barely functional vehicle has ample mileage and a chronic oil-pan malady. But it runs!"
 
 
@@ -18,7 +18,7 @@
       "model": "Fit",
       "year": "2016",
       "price": "7999",
-      "color": "indianred",
+      "color": "Red",
       "purchased": false,
       "description": "Clearly a better choice than the Subaru legacy, this fully functional vehicle won't bleed you of twice its resale value at least every other month."
 
@@ -31,9 +31,9 @@
       "model": "Child's Play",
       "year": "1966",
       "price": "700",
-      "color": "lavender",
+      "color": "Lavender",
       "purchased": true,
-      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+      "description": "Your mom called and told us that if it was good enough for you when you were six, it's good enough for you now."
 
 
     },
@@ -43,31 +43,31 @@
       "model": "Outback",
       "year": "1977",
       "price": "54",
-      "color": "orange",
+      "color": "Orange",
       "purchased": true,
-      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+      "description": "A real steal. No one's really sure why this car is so cheap, or so orange. Luckily for you, it's not in stock."
 
 
     },
 
     {
       "make": "Harley-Davidson",
-      "model": "Hog",
+      "model": "Big, Big Hog",
       "year": "2026",
       "price": "18999",
-      "color": "slateblue",
+      "color": "Black",
       "purchased": false,
-      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+      "description": "The to purchase when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
     },
 
     {
-      "make": "Harley-Davidson",
-      "model": "Hog",
-      "year": "2026",
+      "make": "Ford",
+      "model": "Model T",
+      "year": "1930",
       "price": "18999",
-      "color": "seagreen",
+      "color": "Seagreen",
       "purchased": true,
-      "description": "The vehicle to purchase in ten years, when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+      "description": "Henry Ford was wrong: they also come in Seagreen."
 
 
     }
