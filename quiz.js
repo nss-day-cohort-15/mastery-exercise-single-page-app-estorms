@@ -13,3 +13,26 @@ function populatePage (inventory) {
 
 CarLot.loadInventory(populatePage);
 
+// function activateEvents(inventory) {
+//     document.querySelector("body").addEventListener("click", function(event) {
+//         if (event.target.id === "carColumn") {
+//   console.log(event)
+
+function activateEvents(inventory) {
+document.querySelector("body").addEventListener("click",
+function(event) {
+if (event.target.id === "carColumn") {
+    console.log(event);
+
+}
+
+}
+
+    )
+
+
+
+}
+
+CarLot.loadInventory(activateEvents);
+
