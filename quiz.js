@@ -21,35 +21,25 @@ function populatePage (inventory) {
 }
 CarLot.loadInventory(populatePage);
 
-
-function activateEvents(inventory) {
-document.querySelector("body").addEventListener("click",
-function(event) {
-if (event.target.className === "carColumn") {
-
-
-
-    console.log(event.target)
-    console.log(event.target.parentElement)
-
-    console.log('fuck you')
+function activateEvents () {
+    document.querySelector("body").addEventListener("click", function(event) {
+  console.log(event);
+  console.log(event.target.parentElement)
+  if (event.target.className === "carColumn") {
+    event.target.parentElement.innerHTML="<p>FuckThis</p>"
 
 
+  // event.target.parentElement.remove();
 
 
-
-        document.getElementById('allCars').style.border = "10px solid black"
-
-        }
-
-
-    })
-
-
-
+  }
+})
 
 
 }
 
-CarLot.loadInventory(activateEvents);
+CarLot.loadInventory(activateEvents)
+
+
+
 
