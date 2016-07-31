@@ -17,24 +17,31 @@ function populatePage (inventory) {
     }
 
     containerRow.innerHTML +=
-    `<p><div class="col-md-3" style= "border: 5px solid ${car.color}; box-shadow: 10px 5px 7px black" id="allCars">
-            <span style="font-size: 3rem" class="carColumn">${car.make}</span>
-            <span class="carColumn" style="font-size: 3rem">${car.model}</span>
+    `<section class="col-md-3" style= "border: 5px solid ${car.color}; box-shadow: 10px 5px 7px black" id="allCars">
+            <div class="carColumn">${car.make}
+            <div class="carColumn">${car.model}
             <div class="carColumn">${car.year}
             <div class="carColumn">&#36;${car.price}
             <div class="carColumn">${car.color}
             <div class="carColumn" id="carDescription">${car.description}
             <div class="carColumn" style = "font-weight: bold">${purchaseStatus}</div>
-            </div></div></div></div></div></p>`
+            </div></div></div></div></div></div></section>`
   })
 }
 CarLot.loadInventory(populatePage);
 
 function activateEvents (inventory) {
+    var carSelected
+    var inputField
     inventory.forEach(function (inventory){
         document.querySelector('body').addEventListener('click', function (event){
             if (event.target.className === "carColumn"){
-                document.querySelector('#allCars').classList.add('selected')
+                carSelected = event.target.parentElement;
+                console.log(carSelected);
+                // document.querySelector('#allCars').classList.add('selected')
+                carSelected.classList.add('selected');
+                inputField = document.getElementById('inputField')
+                inputField.value = ''
 
 
             }
