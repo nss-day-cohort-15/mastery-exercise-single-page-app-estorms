@@ -22,9 +22,9 @@
 
 
 body {
-
     padding-top: 100px;
+}
 
-
-
+#bugs {
+    max-width: 150px;
 }

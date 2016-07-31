@@ -1,21 +1,16 @@
-function displayInventory(inventory) {
-    console.log(inventory)
-}
-
-CarLot.loadInventory(displayInventory)
-
+ // Loop over the inventory and populate the page
 
 function populatePage(inventory) {
-    var carsContainer = document.getElementById('containerRow')
+    var carsContainer = document.getElementById('containerRow') //identify DOM element to hold car objects in inventory
     var purchaseStatus
-    inventory.forEach(function(car) {
+    inventory.forEach(function(car) { //set purchase status based on boolean in car object
         if (car.purchased === true) {
             purchaseStatus = "Available!"
         } else {
             purchaseStatus = "Sold out!"
         }
 
-        containerRow.innerHTML +=
+        containerRow.innerHTML += // append each object to targeted DOM element
             `<div class="col-md-3" style= "border: 5px solid ${car.color}; box-shadow: 10px 5px 7px black" id="allCars">
             <h3 class="carColumn">${car.make} ${car.model}</h3>
             <p class="carColumn">${car.year}
@@ -28,22 +23,26 @@ function populatePage(inventory) {
 }
 CarLot.loadInventory(populatePage);
 
+
+  // Now that the DOM is loaded, establish all the event listeners needed
+
 function activateEvents(inventory) {
     var carSelected
     var inputField = document.getElementById('inputField')
 
 
 
-    document.querySelector('body').addEventListener('click', function(event) {
-        if (event.target.className === "carColumn") {
-            carSelected = event.target.parentElement
-            carSelected.style.backgroundColor = "beige"
-            carSelected.style.borderWidth = "10px"
-            inputField.value = ''
-            inputField.focus()
+    document.querySelector('body').addEventListener('click', function(event) { //add click event listener to body
+        if (event.target.className === "carColumn") { //located clicks on car object
+            carSelected = event.target.parentElement //target div containing each object
+            carSelected.style.backgroundColor = "beige" //change background of target div
+            carSelected.style.borderWidth = "10px" //change border width of target div
+            inputField.value = '' //clear input field
+            inputField.focus() //bring cursor to input field
 
-            inputField.addEventListener('keypress', function(event) {
-                if (event.keyCode === 13) {
+
+                inputField.addEventListener('keypress', function(event) { //add keypress event listener to input field
+                if (event.keyCode === 13) {  //when user clicks enter, input field content appended to each car object
                     console.log('listener added successfully')
                     carSelected.innerHTML += inputField.value;
 
@@ -57,26 +56,5 @@ function activateEvents(inventory) {
 
     })
 
-    // document.querySelector('body').addEventListener('keypress', function(event){
-
-    //     if (event.target.id === 'inputField' && event.keyCode === 13){
-    //         console.log('listener added to input field')
-    //         activeElement = document.activeElement
-    //         console.log(activeElement)
-    //         carDescription = document.getElementById('carDescription')
-    //         carDescription.innerText += inputField.value;
-
-    //     }
-
-
-
-    // })
-
-
-
-
-
-
 }
-
 CarLot.loadInventory(activateEvents)

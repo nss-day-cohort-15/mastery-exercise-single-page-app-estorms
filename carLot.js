@@ -1,3 +1,6 @@
+// Load the inventory and send a callback function to be
+// invoked after the process is complete
+
 var CarLot = (function () {
   var inventory = [];
 
