@@ -20,7 +20,11 @@
     font-size: 1.5em;
 }
 
+.selected {
 
+background-color: red;
+
+}
 body {
 
     padding-top: 100px;

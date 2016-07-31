@@ -7,7 +7,7 @@ CarLot.loadInventory(displayInventory)
 
 function populatePage (inventory) {
   var carsContainer = document.getElementById('containerRow')
-  var purchaseStatus;
+  var purchaseStatus
   inventory.forEach(function (car) {
     if (car.purchased === true) {
         purchaseStatus = "Available! Poor you!"
@@ -15,7 +15,6 @@ function populatePage (inventory) {
     else {
         purchaseStatus ="Sold out, you lucky thing!"
     }
-
 
     containerRow.innerHTML +=
     `<p><div class="col-md-3" style= "border: 5px solid ${car.color}; box-shadow: 10px 5px 7px black" id="allCars">
@@ -31,47 +30,86 @@ function populatePage (inventory) {
 }
 CarLot.loadInventory(populatePage);
 
-function activateEvents () {
-    document.querySelector("body").addEventListener("click", function(event) {
-  console.log(event);
-  console.log(event.target.parentElement)
-  if (event.target.className === "carColumn") {
-    // document.getElementById('allCars').style.color = "red"
-    event.target.parentElement.innerHTML="<p>FuckThis</p>"
+function activateEvents (inventory) {
+    inventory.forEach(function (inventory){
+        document.querySelector('body').addEventListener('click', function (event){
+            if (event.target.className === "carColumn"){
+                document.querySelector('#allCars').classList.add('selected')
+
+
+            }
 
 
 
 
 
-  }
-})
+        })
+
+
+
+    })
+
 
 
 }
 
-function activateEvents(inventory) {
- document.querySelector("body").addEventListener('click', function(event){
- if (event.target.id === "button") {
- for (var i = 0; i < inventory.length; i++) {
-document.getElementById('inputField').value = inventory[i].description
-             // for ( var i = 0; i < inventory.length; i++) {
-             //     inventory[i].description = inputField.value
-             // }
- }
-         }
-    // for (var i = 0; i < inventory.length; i++) {
-     //     console.log(inventory[i].description)
-     // }
- }
- )}
+
+
+
+
+
+
+
+
+
+// function activateEvents () {
+// document.querySelector("body").addEventListener("click", function(event) {
+//   console.log(event);
+//   console.log(event.target.parentElement)
+//   if (event.target.className === "carColumn") {
+//     // document.getElementById('allCars').style.color = "red"
+//     event.target.parentElement.innerHTML="<p>FuckThis</p>"
+//     }
+// })
+
+
+// }
+
+// function activateEvents(inventory) {
+//  document.querySelector("body").addEventListener('click', function(event){
+//  if (event.target.id === "button") {
+//  for (var i = 0; i < inventory.length; i++) {
+// document.getElementById('inputField').value = inventory[i].description
+//         }
+//     }
+// })}
+
+// function activateEvents (inventory) {
+
+//   for (var i = 0; i < inventory.length; i++)
+//     document.querySelector("body").addEventListener("click", function(event) {
+//     // console.log(event);
+//     // console.log(event.target.parentElement)
+//   if (event.target.className === "carColumn") {
+//     var carSelected =
+//     console.log(inventory[i].model)
+//     console.log(inventory[i].make)
+
+// }})
+
+
+// }
+
+
+
+
+
 
 
 CarLot.loadInventory(activateEvents)
 
 
-//TRY DOING ACTIVATE EVENTS AS AN AUGMENTER ON POPULATEPAGE? ... you have to do another for each loop over inventory somewhere. try doing it within the populate page iife first
 
-//ADD SOLDOUT, SUCKA! or AVAILABLE
 
 
 
