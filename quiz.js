@@ -33,13 +33,17 @@ CarLot.loadInventory(populatePage);
 function activateEvents (inventory) {
     var carSelected
     var inputField
+
     inventory.forEach(function (inventory){
         document.querySelector('body').addEventListener('click', function (event){
             if (event.target.className === "carColumn"){
                 carSelected = event.target.parentElement;
                 console.log(carSelected);
                 // document.querySelector('#allCars').classList.add('selected')
-                carSelected.classList.add('selected');
+                carSelected.style.backgroundColor = "green"
+                carSelected.style.borderWidth = "10px"
+                console.log(event.currentTarget)
+                // event.currentTarget.style.backgroundColor = "green"
                 inputField = document.getElementById('inputField')
                 inputField.value = ''
                 inputField.focus()
