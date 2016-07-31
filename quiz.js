@@ -42,6 +42,7 @@ function activateEvents (inventory) {
                 carSelected.classList.add('selected');
                 inputField = document.getElementById('inputField')
                 inputField.value = ''
+                inputField.focus()
 
 
             }
