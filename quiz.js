@@ -31,7 +31,7 @@ CarLot.loadInventory(populatePage);
 
 function activateEvents (inventory) {
     var carSelected
-    var inputField
+    var inputField = document.getElementById('inputField')
 
 
 
@@ -40,8 +40,6 @@ function activateEvents (inventory) {
                 carSelected = event.target.parentElement
                 carSelected.style.backgroundColor = "beige"
                 carSelected.style.borderWidth = "10px"
-
-                inputField = document.getElementById('inputField')
                 inputField.value = ''
                 inputField.focus()
 
@@ -51,8 +49,13 @@ function activateEvents (inventory) {
                 })
 
         document.querySelector('body').addEventListener('keypress', function(event){
+
             if (event.target.id === 'inputField' && event.keyCode === 13){
                 console.log('listener added to input field')
+                activeElement = document.activeElement
+                console.log(activeElement)
+                carDescription = document.getElementById('carDescription')
+                carDescription.innerText += inputField.value;
 
             }
 
