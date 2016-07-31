@@ -45,6 +45,7 @@ function activateEvents(inventory) {
                 if (event.keyCode === 13) {  //when user clicks enter, input field content appended to each car object
                     console.log('listener added successfully')
                     carSelected.innerHTML += inputField.value;
+                    inputField.value = '' //clear input field once value appended to car
 
 
                 }
@@ -55,6 +56,15 @@ function activateEvents(inventory) {
 
 
     })
+    document.querySelector('#button').addEventListener('click', function (event){
+        alert("I'm just a button. That's all I know")
 
+
+    })
 }
 CarLot.loadInventory(activateEvents)
+
+
+//return border sizes/background color to normal once another element is selected
+//style, esp. crappy navbar
+
