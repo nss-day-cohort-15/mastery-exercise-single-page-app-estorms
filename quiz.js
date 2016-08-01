@@ -33,12 +33,17 @@ function activateEvents(inventory) {
 
 
     document.querySelector('body').addEventListener('click', function(event) { //add click event listener to body
+
         if (event.target.className === "carColumn") { //located clicks on car object
             carSelected = event.target.parentElement //target div containing each object
             carSelected.style.backgroundColor = "beige" //change background of target div
             carSelected.style.borderWidth = "10px" //change border width of target div
             inputField.value = '' //clear input field
             inputField.focus() //bring cursor to input field
+
+
+
+
 
 
                 inputField.addEventListener('keypress', function(event) { //add keypress event listener to input field
@@ -52,13 +57,26 @@ function activateEvents(inventory) {
 
             })
 
-        }
 
 
-    })
+
+    }
+})
     document.querySelector('#button').addEventListener('click', function (event){
         alert("I'm just a button. That's all I know")
 
+
+    })
+    document.querySelector('body').addEventListener('click', function(event){
+        if (event.target.id === 'allCars'){
+        console.log('allCars selected')
+        carSelected = event.srcElement
+        console.log(carSelected)
+        carSelected.style.backgroundColor = "beige" //change background of target div
+            carSelected.style.borderWidth = "10px" //change border width of target div
+            inputField.value = '' //clear input field
+            inputField.focus() //bring cursor to input field
+    }
 
     })
 }
