@@ -1,3 +1,4 @@
+
 var Carlot = (function (carlot) {
 
     carlot.activateEvents = function () {
@@ -12,10 +13,10 @@ var Carlot = (function (carlot) {
             inputField.value = '' //clear input field
             inputField.focus() //bring cursor to input field
             inputField.addEventListener('keypress', function(event){
-                 if (event.keyCode === 13) {
+                if (event.keyCode === 13) {
                 carSelected.children[4].innerHTML = inputField.
                 value;
-                inputField.value = ''
+                // inputField.value = ''
 
                 }
             })
@@ -23,23 +24,27 @@ var Carlot = (function (carlot) {
 
         }
 
+        if(event.target.id === "fuckthis"){
+            console.log('targeting')
+            carSelected = event.srcElement //target div containing each object
+            carSelected.classList.toggle('carSelected')
+            inputField.value = '' //clear input field
+            inputField.focus() //bring cursor to input field
+            inputField.addEventListener('keypress', function(event){
+                if (event.keyCode === 13) {
+                carSelected.children[4].innerHTML = inputField.
+                value;
+                // inputField.value = ''
+                }
+
+        })
+
+        }
     })
 
     document.querySelector('#button').addEventListener('click', function (event){
         alert("I'm just a button. That's all I know")
     })
-
-    document.querySelector('body').addEventListener('click', function(event){
-       if (event.target.id === 'allCars'){
-        carSelected = event.srcElement
-        carSelected.style.backgroundColor = "beige" //change
-        // background of target div
-        carSelected.style.borderWidth = "10px" //change border width of target div
-        inputField.value = '' //clear input field
-        inputField.focus() //bring cursor to input field
-    }
-
-})
 }
 
 return carlot
