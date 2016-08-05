@@ -14,9 +14,8 @@ var Carlot = (function (carlot) {
             inputField.focus() //bring cursor to input field
             inputField.addEventListener('keypress', function(event){
                 if (event.keyCode === 13) {
-                carSelected.children[4].innerHTML = inputField.
+                carSelected.children[4].innerHTML= inputField.
                 value;
-                // inputField.value = ''
 
                 }
             })
@@ -24,8 +23,7 @@ var Carlot = (function (carlot) {
 
         }
 
-        if(event.target.id === "fuckthis"){
-            console.log('targeting')
+        if(event.target.id === "carDiv"){
             carSelected = event.srcElement //target div containing each object
             carSelected.classList.toggle('carSelected')
             inputField.value = '' //clear input field
@@ -34,7 +32,6 @@ var Carlot = (function (carlot) {
                 if (event.keyCode === 13) {
                 carSelected.children[4].innerHTML = inputField.
                 value;
-                // inputField.value = ''
                 }
 
         })
