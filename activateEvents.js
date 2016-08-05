@@ -12,11 +12,12 @@ var Carlot = (function (carlot) {
             carSelected.style.borderWidth = "10px" //change border width of target div
             inputField.value = '' //clear input field
             inputField.focus() //bring cursor to input field
+
             inputField.addEventListener('keypress', function(event) { //add keypress event listener to input field
                  if (event.keyCode === 13) {  //when user clicks enter, input field content appended to each car object
-                    console.log('listener added successfully')
-                    carSelected.innerHTML += inputField.value;
-                    inputField.value = '' //clear input field once value appended to car
+
+                    carSelected.children[4].innerHTML = inputField.value;
+                    inputField.value = ''
 
                     carSelected.style.backgroundColor = "white" //change background back to original
                     carSelected.style.borderWidth = "5px" //change background back to original
