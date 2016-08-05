@@ -11,7 +11,7 @@
         }
 
         containerRow.innerHTML += // append each object to targeted DOM element
-        `<div class="col-md-3" style= "border: 5px solid ${car.color}; box-shadow: 10px 5px 7px black"  id="allCars">
+        `<div class="col-md-3 allCars" style= "border-color: ${car.color}; box-shadow: 10px 5px 7px black">
         <h3 class="carColumn">${car.make} ${car.model}</h3>
         <p class="carColumn">${car.year}
         <p class="carColumn">&#36;${car.price}
