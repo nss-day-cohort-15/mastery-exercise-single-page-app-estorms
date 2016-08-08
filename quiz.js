@@ -20,6 +20,7 @@
         <p class="carColumn" style = "font-weight: bold">${purchaseStatus}
         </p></p></p></p></p></div>`
     })
+    CarLot.activateEvents()
 }
 CarLot.loadInventory(populatePage);
 
