@@ -1,0 +1,75 @@
+{
+  "cars": [
+    {
+
+      "make": "Subaru",
+      "model": "Legacy",
+      "year": "2001",
+      "price": "5000",
+      "color": "Chartreuse",
+      "purchased": true,
+      "description": "This malodorous, rusted, and barely functional vehicle has ample mileage and a chronic oil-pan malady. But it runs!"
+
+
+   },
+
+    {
+      "make": "Honda",
+      "model": "Fit",
+      "year": "2016",
+      "price": "7999",
+      "color": "Red",
+      "purchased": false,
+      "description": "Clearly a better choice than the Subaru legacy, this fully functional vehicle won't bleed you of twice its resale value at least every other month."
+
+
+
+    },
+
+     {
+      "make": "Tonka",
+      "model": "Child's Play",
+      "year": "1966",
+      "price": "700",
+      "color": "Lavender",
+      "purchased": true,
+      "description": "Your mom called and told us that if it was good enough for you when you were six, it's good enough for you now."
+
+
+    },
+
+     {
+      "make": "Jeep",
+      "model": "Outback",
+      "year": "1977",
+      "price": "54",
+      "color": "Orange",
+      "purchased": true,
+      "description": "A real steal. No one's really sure why this car is so cheap, or so orange. Luckily for you, it's not in stock."
+
+
+    },
+
+    {
+      "make": "Harley-Davidson",
+      "model": "Hog",
+      "year": "2026",
+      "price": "18999",
+      "color": "Black",
+      "purchased": false,
+      "description": "The to purchase when you are a competent and adequately compensated developer. Too bad you'll be so close to retirement."
+    },
+
+    {
+      "make": "Ford",
+      "model": "Model T",
+      "year": "1930",
+      "price": "18999",
+      "color": "Seagreen",
+      "purchased": true,
+      "description": "Henry Ford was wrong: they also come in Seagreen."
+
+
+    }
+  ]
+}
